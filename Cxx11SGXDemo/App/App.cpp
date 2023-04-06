@@ -203,7 +203,7 @@ int SGX_CDECL main(int argc, char *argv[])
     
     /* Utilize trusted libraries */ 
     ecall_libcxx_functions();
-    
+    printf("Hello World!\n");
     /* Destroy the enclave */
     sgx_destroy_enclave(global_eid);
     
